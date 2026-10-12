@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: VM4_R10_CURRENT_SYMLINK_261013
+    conditions:
+      - author = livastic-vm4-secondary-oc12-20260929
+      - title = VM4_R10_CURRENT_SYMLINK_TARGET_ONLY_261013
+      - -mergify-configuration-changed
+    actions:
+      merge:
+        method: merge
